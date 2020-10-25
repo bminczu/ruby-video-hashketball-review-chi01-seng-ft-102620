@@ -185,12 +185,5 @@ end
 end
 
 def big_shoe_rebounds
-  players.each do |key|
-    key.each do |stats, value|
-      if stats == :shoe
-        value.max_by
-      return key[:rebounds]
-    end
-end
-end
+  players.max_by{|key| k[:shoe]} [:rebounds]
 end
