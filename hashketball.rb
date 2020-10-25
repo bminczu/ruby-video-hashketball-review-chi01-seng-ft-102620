@@ -160,12 +160,6 @@ def team_names
   [game_hash[:home][:team_name], game_hash[:away][:team_name]]
 end
 
-def player_numbers(team_name)
-  team(team_name)[:players].map do |key, value|
-    value[:number]
-  end
-end
-
 #HELPER METHOD
 def team team_name
   case team_name
@@ -173,5 +167,11 @@ def team team_name
     game_hash[:home]
   when game_hash[:away][:team_name]
     game_hash[:away]
+  end
+end
+
+def player_numbers(team_name)
+  team(team_name)[:players].map do |key, value|
+    value[:number]
   end
 end
