@@ -133,7 +133,7 @@ end
 
 def num_points_scored(player_name)
   players.each do |key|
-    key[:player_name]== player_name
+    if key[:player_name]== player_name
     return key[:shoe]
 end
 end
