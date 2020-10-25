@@ -139,7 +139,7 @@ end
 end
 end
 
-def nshoe_size(player_name)
+def shoe_size(player_name)
   players.each do |key|
     if key[:player_name]== player_name
     return key[:shoe]
