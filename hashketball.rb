@@ -1,5 +1,5 @@
 # Write your code below game_hash
-
+require 'pry'
 def game_hash
   {
     home: {
@@ -172,6 +172,7 @@ end
 
 def player_numbers(team_name)
   team(team_name)[:players].map do |key, value|
+    binding.pry
     value[:number]
   end
 end
