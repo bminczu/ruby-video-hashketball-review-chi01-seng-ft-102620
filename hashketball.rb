@@ -166,11 +166,10 @@ def player_numbers(team_name)
   end
 end
 
-#HELPER METHOD 
+#HELPER METHOD
 def team team_name
   case team_name
   when game_hash[:home][:team_name]
     game_hash[:home]
   when game_hash[:away][:team_name]
     game_hash[:away]
-    
