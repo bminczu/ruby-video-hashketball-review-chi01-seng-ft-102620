@@ -137,4 +137,3 @@ def num_points_scored(player_name)
     return key[:points]
 end
 end
-end
